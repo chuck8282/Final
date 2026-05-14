@@ -32,6 +32,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Global Image Responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Navigation layout using Flexbox */
 header {
     display: flex;
@@ -868,6 +874,11 @@ footer {
 @media (max-width: 480px) {
     .testimonials-grid {
         grid-template-columns: 1fr;
+    }
+
+    .testimonial-image {
+        width: 80px;
+        height: 80px;
     }
 
     .product-grid {
