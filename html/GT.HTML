@@ -127,7 +127,7 @@
                     <span class="price">$599/mo</span>
                 </div>
                 <div class="product-card" data-category="hardware">
-                    <img src="../images/aqua.jpg" alt="AquaSave System" class="product-image"ry="hardware">
+                    <img src="../images/aqua.jpg" alt="AquaSave System" class="product-image">
                     <div class="product-icon">💧</div>
                     <h3>AquaSave System</h3>
                     <p>Smart water conservation for buildings and facilities.</p>
@@ -175,21 +175,37 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Get in Touch</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>12001 Menual Blvd NE<br>Albuquerque, NM 87121</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:505-555-5590">505-555-5590</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:GTsales@greentech.com">GTsales@greentech.com</a></p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            </div>
             <div id="form-feedback" aria-live="polite"></div>
         </section>
     </main>
