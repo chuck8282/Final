@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Solutions | Sustainable Tech</title>
+    <meta name="description" content="GreenTech Solutions provides eco-friendly technology solutions to help businesses reduce their carbon footprint.">
+    <meta name="keywords" content="sustainable technology, eco-friendly, carbon tracking, renewable energy">
+    <meta name="author" content="GreenTech Solutions">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">GreenTech Solutions</div>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Accessibility Feature: High Contrast Toggle -->
+        <button id="contrast-toggle" aria-pressed="false">High Contrast Mode</button>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <img src="../images/main photo.jpg" alt="Green technology innovation" class="hero-image">
+            <h1>Innovating for a Greener Tomorrow</h1>
+            <p>Eco-friendly technology solutions to help your business reduce its carbon footprint.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About GreenTech Solutions</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded in 2024, GreenTech Solutions is dedicated to creating innovative, sustainable technology that makes a real difference for the planet.</p>
+                    <p>Our mission is to empower businesses of all sizes to embrace sustainability without compromising on performance or affordability.</p>
+                    <ul class="about-list">
+                        <li>🌱 100+ Companies Partnered</li>
+                        <li>📊 2.5M Tons CO₂ Reduced</li>
+                        <li>⚡ 50+ Energy Solutions Deployed</li>
+                        <li>🌍 Supporting Global Sustainability Goals</li>
+                    </ul>
+                </div>
+                <img src="../images/sustain.png" alt="Sustainability solutions" class="about-image">
+            </div>
+        </section>
+
+        <!-- Impact Statistics -->
+        <section id="stats" class="stats-section">
+            <h2>Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="2500000">0</h3>
+                    <p class="stat-label">Tons CO₂ Prevented</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="156">0</h3>
+                    <p class="stat-label">Corporate Clients</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="42">0</h3>
+                    <p class="stat-label">Countries Served</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="98">0</h3>
+                    <p class="stat-label">Satisfaction Rate %</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section with JS Filtering -->
+        <section id="products">
+            <h2>Our Eco-Friendly Products</h2>
+            
+            <!-- Interactive Filter -->
+            <div class="filter-container">
+                <label for="product-filter">Filter by Category:</label>
+                <select id="product-filter">
+                    <option value="all">All Products</option>
+                    <option value="energy">Energy Efficiency</option>
+                    <option value="software">Carbon Tracking</option>
+                    <option value="hardware">Smart Recycling</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-list">
+                <!-- Data attributes are used for JavaScript filtering -->
+                <div class="product-card" data-category="energy">
+                    <img src="../images/smart hub.jpg" alt="Smart Solar Hub" class="product-image">
+                    <h3>Smart Solar Hub</h3>
+                    <p>Optimize your office's energy consumption.</p>
+                    <span class="price">$4,999</span>
+                </div>
+                <div class="product-card" data-category="software">
+                    <img src="../images/smart tracking.jpg" alt="EcoTrack Pro" class="product-image">
+                    <h3>EcoTrack Pro</h3>
+                    <p>Monitor and reduce your carbon footprint in real-time.</p>
+                    <span class="price">$299/mo</span>
+                </div>
+                <div class="product-card" data-category="hardware">
+                    <img src="../images/AI Recycle.jpg" alt="Auto-Sort Bin" class="product-image">
+                    <h3>Auto-Sort Bin</h3>
+                    <p>AI-powered recycling bins for commercial spaces.</p>
+                    <span class="price">$2,499</span>
+                </div>
+                <div class="product-card" data-category="energy">
+                    <img src="../images/eco battery.jpg" alt="EcoPower Battery" class="product-image">
+                    <h3>EcoPower Battery</h3>
+                    <p>Long-lasting energy storage solutions for your facility.</p>
+                    <span class="price">$5,999</span>
+                </div>
+                <div class="product-card" data-category="software">
+                    <img src="../images/sustain.png" alt="SustainTrack Suite" class="product-image">
+                    <h3>SustainTrack Suite</h3>
+                    <p>Complete ESG reporting and sustainability analytics.</p>
+                    <span class="price">$599/mo</span>
+                </div>
+                <div class="product-card" data-category="hardware">
+                    <img src="../images/aqua.jpg" alt="AquaSave System" class="product-image">
+                    <div class="product-icon">💧</div>
+                    <h3>AquaSave System</h3>
+                    <p>Smart water conservation for buildings and facilities.</p>
+                    <span class="price">$1,999</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter-section">
+            <h2>Stay Updated on Sustainability</h2>
+            <p>Get the latest eco-tech trends and sustainability tips delivered to your inbox.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <div id="newsletter-feedback" aria-live="polite"></div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="../images/sara chen.jpg" alt="Sarah Chen" class="testimonial-image">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"GreenTech Solutions helped us reduce our carbon footprint by 40% in just one year!"</p>
+                    <p class="testimonial-author">— Sarah Chen, GreenCorp Industries</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="../images/michael Johnson.jpg" alt="Michael Johnson" class="testimonial-image">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The ROI on our EcoTrack Pro investment was immediate. Highly recommended!"</p>
+                    <p class="testimonial-author">— Michael Johnson, EcoLogistics Ltd</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="../images/Elena Rodrigues.jpg" alt="Elena Rodriguez" class="testimonial-image">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Outstanding service and support. They truly care about sustainability."</p>
+                    <p class="testimonial-author">— Elena Rodriguez, SustainableTech Ventures</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>12001 Menual Blvd NE<br>Albuquerque, NM 87121</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:505-555-5590">505-555-5590</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:GTsales@greentech.com">GTsales@greentech.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="form-feedback" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll to top" style="display:none;">↑</button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>GreenTech Solutions</h4>
+                <p>Leading the sustainability revolution with innovative tech.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GreenTech Solutions. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../java/GT.js"></script>
+</body>
+</html>
